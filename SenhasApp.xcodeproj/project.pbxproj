@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B070694927C436D600F8DC65 /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B070694827C436D600F8DC65 /* PasswordsViewController.swift */; };
+		B070694B27C4382A00F8DC65 /* SecurityTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B070694A27C4382A00F8DC65 /* SecurityTipsViewController.swift */; };
+		B070694D27C438A400F8DC65 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B070694C27C438A400F8DC65 /* PasswordGenerator.swift */; };
 		B09BCF9127C4237400ABB371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BCF9027C4237400ABB371 /* AppDelegate.swift */; };
 		B09BCF9327C4237400ABB371 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BCF9227C4237400ABB371 /* SceneDelegate.swift */; };
 		B09BCF9527C4237400ABB371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BCF9427C4237400ABB371 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B070694827C436D600F8DC65 /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
+		B070694A27C4382A00F8DC65 /* SecurityTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipsViewController.swift; sourceTree = "<group>"; };
+		B070694C27C438A400F8DC65 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 		B09BCF8D27C4237400ABB371 /* SenhasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenhasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09BCF9027C4237400ABB371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B09BCF9227C4237400ABB371 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +108,9 @@
 				B09BCF9027C4237400ABB371 /* AppDelegate.swift */,
 				B09BCF9227C4237400ABB371 /* SceneDelegate.swift */,
 				B09BCF9427C4237400ABB371 /* ViewController.swift */,
+				B070694C27C438A400F8DC65 /* PasswordGenerator.swift */,
+				B070694827C436D600F8DC65 /* PasswordsViewController.swift */,
+				B070694A27C4382A00F8DC65 /* SecurityTipsViewController.swift */,
 				B09BCF9627C4237400ABB371 /* Main.storyboard */,
 				B09BCF9927C4237700ABB371 /* Assets.xcassets */,
 				B09BCF9B27C4237700ABB371 /* LaunchScreen.storyboard */,
@@ -259,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09BCF9527C4237400ABB371 /* ViewController.swift in Sources */,
+				B070694927C436D600F8DC65 /* PasswordsViewController.swift in Sources */,
+				B070694D27C438A400F8DC65 /* PasswordGenerator.swift in Sources */,
 				B09BCF9127C4237400ABB371 /* AppDelegate.swift in Sources */,
 				B09BCF9327C4237400ABB371 /* SceneDelegate.swift in Sources */,
+				B070694B27C4382A00F8DC65 /* SecurityTipsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

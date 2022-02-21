@@ -152,6 +152,14 @@
                     <navigationItem key="navigationItem" title="Gerador de Senhas" id="mrH-Bx-dSr">
                         <barButtonItem key="backBarButtonItem" title="Gerador de Senhas" id="Btq-lA-fwR"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="swCapitalLetters" destination="jhG-Xb-y8I" id="gun-v9-34D"/>
+                        <outlet property="swLetters" destination="jm9-pn-DE1" id="6uF-pg-4ce"/>
+                        <outlet property="swNumbers" destination="XG9-s8-Xhr" id="lQk-R1-6g0"/>
+                        <outlet property="swSpecialCharacters" destination="Uzo-fj-VGP" id="s4C-Me-0ki"/>
+                        <outlet property="tfNumberOfCharacters" destination="tsr-um-xkh" id="ynY-iU-uKk"/>
+                        <outlet property="tfTotalPasswords" destination="uQT-ch-VPr" id="GlP-EY-l1x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,7 +168,7 @@
         <!--Lista de Senhas-->
         <scene sceneID="2aX-FI-kjt">
             <objects>
-                <viewController id="dOS-SO-XFt" sceneMemberID="viewController">
+                <viewController id="dOS-SO-XFt" customClass="PasswordsViewController" customModule="SenhasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r6n-9e-3kV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,9 +191,12 @@
                                 <color key="tintColor" red="0.66909575460000004" green="0.21818700429999999" blue="0.47018414739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Gerar Novamente"/>
+                                <connections>
+                                    <action selector="generate:" destination="dOS-SO-XFt" eventType="touchUpInside" id="77S-Zd-hNz"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="9999" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-64-xbD">
-                                <rect key="frame" x="16" y="162" width="382" height="587"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="9999" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-64-xbD">
+                                <rect key="frame" x="12" y="166" width="382" height="587"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" red="0.66909575460000004" green="0.21818700429999999" blue="0.47018414739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -207,15 +218,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lista de Senhas" id="D6a-rL-OvW"/>
+                    <connections>
+                        <outlet property="tvPasswords" destination="DXi-64-xbD" id="cVu-Dl-6j0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W2L-cO-ff8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1705.7971014492755" y="107.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--Security Tips View Controller-->
         <scene sceneID="X0B-3Q-VHs">
             <objects>
-                <viewController id="Cas-st-mVh" sceneMemberID="viewController">
+                <viewController id="Cas-st-mVh" customClass="SecurityTipsViewController" customModule="SenhasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5zb-5i-T6n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,6 +246,9 @@
                                 <color key="tintColor" red="0.66909575460000004" green="0.21818700429999999" blue="0.47018414739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Fechar"/>
+                                <connections>
+                                    <action selector="close:" destination="Cas-st-mVh" eventType="touchUpInside" id="Xv1-Iu-Yv6"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nw-Hy-KIL">
                                 <rect key="frame" x="20" y="49" width="374" height="744"/>
