@@ -33,10 +33,9 @@ class PasswordGenerator {
         self.useSpecialCharacters = useSpecialCharacters
     }
     
-    
     func generate(total: Int) -> [String] {
         passwords.removeAll()
-
+        
         var universe: String = "" // variavel para armazenar o universo de caracters a ser utilizado para gerar as senhas
         
         // IFS para selecionar os caracters selecionados pelo usuario.
